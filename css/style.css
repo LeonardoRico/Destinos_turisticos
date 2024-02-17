@@ -2,58 +2,73 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
+}
+
+header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-top: 8px;
+    float: left;
+}
+
+header .contenedor-botones {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 10px auto;
+}
+header .contenedor-botones .boton-registro{
+    margin-left: 20px;
+}
+
+.boton-inicio-sesion,
+.boton-registro {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
-  }
-  
-  h1 {
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.boton-inicio-sesion:hover,
+.boton-registro:hover {
+    background-color: #c5c0c0;
+}
+
+h1 {
     font-size: 2em;
     margin: 0;
-  }
-  
-  main {
+}
+
+main {
     padding: 20px;
-  }
-  
-  .hero {
-    background-image: url("imagen-hero.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    text-align: center;
-  }
-  
-  .hero h2 {
-    color: #fff;
-    font-size: 1.5em;
-    margin-top: 100px;
-  }
-  
-  .hero p {
-    color: #fff;
-    font-size: 1em;
-    margin-top: 10px;
-  }
-  
-  .destinos {
+}
+
+.destinos {
     margin-top: 20px;
-  }
-  
-  .destinos h2 {
+}
+
+.destinos h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-  }
-  
-  .destinos ul {
+}
+
+.destinos ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .destinos li {
+}
+
+.destinos li {
     display: inline-block
-  }
+}
