@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgba(133, 163, 102, 0.1);
 }
 
 header {
@@ -10,7 +11,10 @@ header {
     padding: 10px;
 }
 
-h1 {
+/*damos el estilo al título para que sea alineado la izquierda*/
+header h1 {
+    font-size: 2em;
+    margin: 0;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -28,12 +32,12 @@ header .contenedor-botones .boton-registro{
     margin-left: 20px;
 }
 
-.boton-inicio-sesion,
-.boton-registro {
+/*se genera el estilo para ambos botones*/
+section button:first-child {
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; /*ícono que toma el cursor al ubicarse en el botón*/
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -41,22 +45,23 @@ header .contenedor-botones .boton-registro{
     transition: all 0.2s ease-in-out;
 }
 
+/*se crea el efecto hover*/
 .boton-inicio-sesion:hover,
 .boton-registro:hover {
     background-color: #c5c0c0;
-}
-
-h1 {
-    font-size: 2em;
-    margin: 0;
 }
 
 main {
     padding: 20px;
 }
 
+.destinos img{
+    height: auto;
+    width: 100%;
+}
+
 .destinos {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .destinos h2 {
@@ -67,8 +72,31 @@ main {
 .destinos ul {
     list-style: none;
     padding: 0;
+    display: grid;
 }
 
 .destinos li {
     display: inline-block
+}
+aside{
+    display: flex;
+    float: center;
+    padding: 20px;
+    background-color: white;
+    width: 90%;
+    height: 1000px;
+    justify-content: center;
+}
+
+
+.information{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 70% 30%;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }
